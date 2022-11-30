@@ -12,4 +12,4 @@ class TestLogin:
         obj.go_to_website()
         obj.put_data_input(login)
         obj.click_button()
-        assert obj.get_text_css(obj.header_text) == 'PRODUCTS'
+        assert obj.get_text_css(obj.header_text) == 'PRODUCTSs'
