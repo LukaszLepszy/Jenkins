@@ -32,7 +32,7 @@ class HomePage(BasePage):
         password.send_keys("secret_sauce")
         allure.attach(self.driver.get_screenshot_as_png(), name="Login and Password text in inputs", attachment_type=AttachmentType.PNG)
 
-    @allure.step("Click login buttonn")
+    @allure.step("Click login button")
     def click_button(self):
         button = self.find_by_css_selector(self.login_button)
         button.click()
